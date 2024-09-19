@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassino Shop - Loja Premium de Acessórios de Cassino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Font and reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #222;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: #66fcf1;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #45a29e;
+            border-radius: 5px;
+        }
+
+        /* Banner Section */
+        #banner {
+            background-image: url('https://via.placeholder.com/1200x500');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 100px 0;
+            text-align: center;
+            color: #fff;
+            margin-top: 80px;
+        }
+
+        #banner h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #banner p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        #banner .btn {
+            padding: 10px 30px;
+            background: linear-gradient(45deg, #66fcf1, #45a29e);
+            color: #000;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        #banner .btn:hover {
+            background: linear-gradient(45deg, #45a29e, #66fcf1);
+        }
+
+        /* Product Section */
+        #produtos {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #produtos h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #66fcf1;
+        }
+
+        .produtos-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .produto {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .produto:hover {
+            transform: scale(1.05);
+        }
+
+        .produto img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .produto h3 {
+            color: #66fcf1;
+            margin: 15px 0;
+        }
+
+        .produto p {
+            margin: 10px 0;
+        }
+
+        .produto button {
+            padding: 10px;
+            background-color: #45a29e;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .produto button:hover {
+            background-color: #66fcf1;
+        }
+
+        /* About Section */
+        #sobre {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #sobre h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #sobre p {
+            font-size: 1.2rem;
+            color: #ddd;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            color: #66fcf1;
+        }
+
+        .social a {
+            margin: 0 10px;
+        }
+
+        .social img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cassino Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container">
+            <h2>Transforme sua casa em um cassino</h2>
+            <p>Encontre os melhores produtos para criar a experiência perfeita de cassino, direto na sua casa.</p>
+            <a href="#produtos" class="btn">Explorar Produtos</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="container">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-grid">
+            <div class="produto">
+                <img src="https://via.placeholder.com/300x200" alt="Fichas de Poker">
+                <h3>Fichas de Poker Premium</h3>
+                <p>Conjunto completo de fichas de alta qualidade para suas apostas.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://via.placeholder.com/300x200" alt="Baralho de Cartas">
+                <h3>Baralho de Cartas Oficial</h3>
+                <p>Cartas com design elegante e durabilidade profissional.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://via.placeholder.com/300x200" alt="Roleta de Cassino">
+                <h3>Roleta de Cassino</h3>
+                <p>Roleta de luxo para recriar a emoção dos cassinos.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <h2>Sobre Nós</h2>
+        <p>Na Cassino Shop, oferecemos os melhores produtos para transformar sua casa no cassino dos seus sonhos. Desde fichas de poker até roletas de luxo, garantimos qualidade e autenticidade em cada item.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="#"><img src="https://via.placeholder.com/30" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
+                <a href="#"><img src="https://via.placeholder.com/30" alt="Twitter"></a>
+            </div>
+            <p>&copy; 2024 Cassino Shop. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
